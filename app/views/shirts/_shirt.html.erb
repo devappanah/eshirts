@@ -1,0 +1,11 @@
+<div class="col-md-3">
+  <div class="thumbnail">
+    <%= link_to shirt_path(shirt) do %>
+    <%= image_tag "shirt.jpg", class: "img-responsive" %>
+    <% end %>
+    <div class="caption">
+      <p><strong><%= link_to shirt.name, shirt_path(shirt) %></strong></p>
+      <p>$<%= shirt.price.to_f / 100 %> </p>
+    </div>
+  </div>
+</div>
